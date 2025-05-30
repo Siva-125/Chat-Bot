@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#root{
+    display: flex;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in{
+    0%{
+        background-color: rgb(20,20,20);
+        opacity: 0%;
+    }
+    100%{
+        opacity: 1;
+    }
+}

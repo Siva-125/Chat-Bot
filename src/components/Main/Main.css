@@ -1,0 +1,165 @@
+.main {
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.main .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.main .nav-bar img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.main .container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main .greet {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    padding: 30px;
+}
+
+.main .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.main .card {
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+}
+
+.main .card img {
+    width: 50px;
+}
+
+.main .card:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.main-bottom {
+    position: absolute;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+    max-width: 1000px;
+    width: 100%;
+    bottom: 0;
+    align-items: center;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px;
+    gap: 20px;
+    background-color: rgb(32, 32, 32);
+}
+
+.input-box img {
+    padding: 0px 2px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.input-box input {
+    flex: 1;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+.result {
+    max-height: 75vh;
+    padding: 0px 5%;
+    overflow: scroll;
+}
+
+.result img {
+    width: 30px;
+}
+
+.result-title {
+    margin: 30px 0px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.result p {
+    padding: 10px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.loading .loader {
+    background: linear-gradient(to right, rgb(105, 105, 253), rgb(173, 173, 255), rgb(105, 105, 253));
+    animation: loading 4s infinite linear;
+}
+
+@keyframes loading {
+    0% {
+        background-position: -800px 0px;
+    }
+
+    100% {
+        background-position: 800px 0px;
+    }
+}
+
+.output {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.output p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media (max-width:600px) {
+    .main-bottom input {
+        flex: none;
+        width: 150px;
+    }
+    .main-bottom img{
+        width: 20px;
+    }
+    .input-box{
+        padding: 5px 10px;
+    }
+    .input-box div{
+        gap: 5px;
+    }
+}
