@@ -1,12 +1,30 @@
-# React + Vite
+# Chat Bot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **Conversational AI Chat bot** built by using **React JS** and **Google Gemini API Key**. This chatbot can respond to messages and integrates with **Google Gemini API** to provide intelligent conversations.
 
-Currently, two official plugins are available:
+## Features
+- AI-powered responses using **Google Gemini API**
+- Developed with **React.js** and **Vite** for fast and optimized performance
+- Deployed on **Netlify** for public access
+- Easy setup and deployment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+1. Clone the repository:
+ 
+   git clone https://github.com/Siva-125/Chat-Bot.git
+   cd Chat-Bot
+   
+2. Install dependencies:
+ 
+   npm install
+   
+3. Run the project locally (Vite uses npm run dev instead of npm start):
+ 
+   npm run dev
 
-## Expanding the ESLint configuration
+## Usage Guide
+- Open the deployed chatbot in your browser.
+- Enter a message in the input field and the chatbot will generate a response using **Google Gemini API**.
+- The chatbot can handle a variety of queries including general knowledge, casual conversation and more.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is open source. Feel free to use and contribute!
